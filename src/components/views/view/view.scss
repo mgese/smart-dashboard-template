@@ -1,0 +1,11 @@
+.view{
+  width: 100vw;
+  height: 100vh;
+
+  flex-shrink: 0;
+  scroll-snap-align: start;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

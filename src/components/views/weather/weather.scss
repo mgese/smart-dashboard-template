@@ -1,0 +1,82 @@
+.weather {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 100vh;
+  width: 100vw;
+
+  scroll-snap-align: start;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10vh;
+    padding: 5vh;
+
+    height: 100%;
+    width: 33.3%;
+
+    &__temerature {
+      &__tmp {
+        font-size: 11.5vh;
+        font-weight: bold;
+      }
+
+      &__feels-like {
+        font-size: 4vh;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 33.3%;
+
+
+    img {
+      height: 55%;
+    }
+
+    &__condition {
+      font-size: 6vh;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  &__right {
+    padding: 5vh;
+    width: 33.3%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+
+    &__empty {
+      aspect-ratio: 1;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        height: 100%;
+      }
+
+      &__text {
+        font-size: 2.5vh;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.indicators {
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+}

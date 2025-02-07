@@ -1,0 +1,10 @@
+.indicator {
+  height: 3vh;
+  aspect-ratio: 1;
+
+  border-radius: 100%;
+
+  background-color: #FFF;
+
+  transition: scale .5s;
+}
